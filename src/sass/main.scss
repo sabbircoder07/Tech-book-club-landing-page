@@ -1,0 +1,22 @@
+@import "breakpoints";
+
+/*BASE-Base Variables with mixins and palceholders*/
+
+@import "base";
+@import "typography";
+
+/*FRAMEWORK-Structure and layout files*/
+
+/*Component-header and another files*/
+@import "header";
+@import "hero-container";
+@import "btn";
+@import "main-container";
+@import "section-together";
+@import "section-average";
+@import "section-tech";
+@import "section-membership";
+@import "section-testimonial";
+@import "footer";
+
+/*Component-footer and another files*/

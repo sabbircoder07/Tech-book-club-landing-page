@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  width: 100%;
+  padding: 3.4rem 15rem 5rem 15rem !important;
+  background-image: url(../assets/images/pattern-light-bg.svg),
+    url(../assets/images/pattern-glow.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right, top left;
+  background-color: antiquewhite;
+  @media only screen and (max-width: $bp-largest) {
+    padding: 3.4rem 10rem 5rem 10rem !important;
+  }
+  @media only screen and (max-width: $bp-large) {
+    padding: 3.4rem 5rem 5rem 5rem !important;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    padding: 4rem 2rem !important;
+  }
+  @media only screen and (max-width: $bp-small) {
+    padding: 2.6rem 1rem !important;
+  }
+  &__brand--logo {
+    width: 16rem !important;
+    height: auto !important;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

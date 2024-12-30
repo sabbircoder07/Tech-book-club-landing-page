@@ -1,0 +1,93 @@
+.hero-container {
+  display: flex;
+  width: 100%;
+  gap: 4rem;
+  @media only screen and (max-width: $bp-medium-tab) {
+    flex-direction: column;
+  }
+  &__heading {
+    position: relative;
+    width: 100%;
+    height: 12rem;
+    padding-top: 16rem;
+    @media only screen and (max-width: $bp-medium-tab) {
+      width: 90%;
+      height: 10rem !important;
+      padding-top: 0rem !important;
+    }
+    @media only screen and (max-width: $bp-smaller) {
+      width: 100%;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      height: 13rem !important;
+    }
+  }
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 5rem 0rem;
+    @media only screen and (max-width: $bp-medium-tab) {
+      padding: 0rem;
+    }
+  }
+  &__description {
+    width: 90%;
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+  }
+  &__arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__arrow {
+    width: 2rem;
+    height: 2rem;
+  }
+  &__stats {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  &__stat-image {
+    width: 14rem;
+    height: auto;
+    @media only screen and (max-width: $bp-smaller) {
+      width: 10rem;
+    }
+  }
+  &__stat {
+    font-family: "Martian Mono", serif;
+    font-size: 1.3rem;
+    margin-top: -0.8rem;
+    @media only screen and (max-width: $bp-smaller) {
+      font-size: 1rem;
+    }
+  }
+  &__background {
+    background-image: url(../assets/images/image-hero-desktop.webp);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    @media only screen and (max-width: $bp-medium-tab) {
+      background-image: url(../assets/images/image-hero-tablet.webp);
+      width: 100%;
+      height: 80rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      background-image: url(../assets/images/image-hero-mobile.webp);
+      width: 100%;
+      height: 35rem;
+    }
+  }
+}

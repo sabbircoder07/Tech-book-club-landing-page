@@ -1,0 +1,71 @@
+.section-together {
+  margin: 8rem 0;
+  display: flex;
+  gap: 8rem;
+  @media only screen and (max-width: $bp-medium-tab) {
+    flex-direction: column-reverse;
+    gap: 4rem !important;
+    margin: 4rem 0 !important;
+  }
+  @media only screen and (max-width: $bp-small) {
+    gap: 2rem !important;
+  }
+  &__img {
+    background-image: url(../assets/images/image-read-together-desktop.webp);
+    background-size: cover;
+    width: 44%;
+    height: auto;
+    border-radius: 5px;
+    @media only screen and (max-width: $bp-medium-tab) {
+      background-image: url(../assets/images/image-read-together-tablet.webp);
+      width: 100%;
+      height: 65rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      background-image: url(../assets/images/image-read-together-mobile.webp);
+      height: 35rem;
+    }
+  }
+  &__content {
+    width: 40%;
+    padding: 5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+    @media only screen and (max-width: $bp-medium-tab) {
+      width: 100%;
+      padding: 0rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      gap: 2rem;
+    }
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @media only screen and (max-width: $bp-small) {
+      gap: 1rem;
+    }
+  }
+  &__text {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    @media only screen and (max-width: $bp-small) {
+      gap: 0.8rem;
+    }
+  }
+  &__check-icon {
+    width: 2.6rem;
+    height: auto;
+    @media only screen and (max-width: $bp-small) {
+      width: 2rem;
+    }
+  }
+  p {
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.2rem;
+    }
+  }
+}

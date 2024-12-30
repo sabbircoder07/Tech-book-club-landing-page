@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --color-primary: #062630;
+  --color-White: #ffffff;
+}
+
+body {
+  font-family: "Inter", serif;
+  margin: 0 auto;
+  max-width: 144rem;
+  min-height: calc(100vh);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: var(--color-primary);
+  transition: all 0.3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Martian Mono", serif;
+  color: var(--color-primary);
+}
+
+.heading-one {
+  font-size: 4.8rem;
+  line-height: 5.4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #fd7e14, #062630, #062630, #fd7e14);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 4.2rem !important;
+    line-height: 5.2rem !important;
+  }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 3.6rem !important;
+    line-height: 4.4rem !important;
+  }
+}
+.heading-two {
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 2.8rem !important;
+    line-height: 3.4rem !important;
+  }
+}
+
+.heading-three {
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 1.8rem;
+  }
+}
+
+.heading-four {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+}
+
+.heading-five {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+.heading-six {
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+}
+
+p {
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  opacity: 0.8;
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+}

@@ -1,0 +1,22 @@
+.btn {
+  font-family: "Martian Mono", serif;
+  width: 30rem;
+  height: 4.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-decoration: none;
+  background-color: antiquewhite;
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: 2px solid var(--color-primary);
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}

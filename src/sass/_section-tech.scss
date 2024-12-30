@@ -1,0 +1,76 @@
+.section-tech {
+  font-family: "Martian Mono", serif;
+  width: 100%;
+  padding: 5rem 2rem;
+  background-image: url(../assets/images/pattern-light-bg.svg),
+    url(../assets/images/pattern-glow.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right, top left;
+  background-color: antiquewhite;
+  border-radius: 5px;
+  margin-bottom: 8rem;
+  @media only screen and (max-width: $bp-medium-tab) {
+    margin-bottom: 4rem;
+    padding: 2rem;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    @media only screen and (max-width: $bp-medium-tab) {
+      gap: 2rem;
+    }
+  }
+  &__heading {
+    width: 45%;
+    text-align: center;
+    @media only screen and (max-width: $bp-medium-tab) {
+      width: 100%;
+    }
+  }
+  &__steps {
+    display: flex;
+    flex: 1;
+    gap: 2rem;
+    flex-wrap: wrap;
+    @media only screen and (max-width: $bp-small) {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__step {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 20rem;
+    @media only screen and (max-width: $bp-smallest) {
+      width: 25rem;
+    }
+  }
+  &__step-number {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__pattern-arrow {
+    width: 6rem;
+    height: auto;
+  }
+  span {
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    height: 3.2rem;
+    width: 3.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    opacity: 0.8;
+  }
+  p {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+}

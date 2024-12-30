@@ -1,0 +1,107 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  padding: 5rem 15rem 2rem 15rem !important;
+  background-image: url(../assets/images/pattern-dark-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #062630;
+  @media only screen and (max-width: $bp-medium-tab) {
+    padding: 5rem 4rem 2rem 4rem !important;
+  }
+  @media only screen and (max-width: $bp-small) {
+    padding: 2rem !important;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+  }
+  &__heading {
+    color: #fff;
+    text-align: center;
+    width: 50%;
+    @media only screen and (max-width: $bp-large) {
+      width: 70%;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      width: 80%;
+    }
+    @media only screen and (max-width: $bp-medium-tab) {
+      width: 90%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 2.2rem !important;
+      width: 100%;
+    }
+  }
+  &__btn {
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: #062630;
+    border: 2px solid #fff;
+  }
+  &__arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__arrow {
+    width: 2rem;
+    height: 2rem;
+  }
+  &__stats {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__stat {
+    color: #fff;
+    margin-top: -1rem;
+  }
+  &__stat-image {
+    width: 14rem;
+    height: auto !important;
+    @media only screen and (max-width: $bp-small) {
+      width: 10rem;
+    }
+  }
+  &__stat-container {
+    display: flex;
+    flex-direction: column;
+  }
+  hr {
+    width: 100%;
+    border: 1px solid #375159;
+    margin-top: 2rem;
+  }
+  &__copyright-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -1.2rem;
+  }
+  &__copyright {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  &__social-container {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  &__social-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    cursor: pointer;
+  }
+  p {
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.2rem;
+    }
+  }
+}
