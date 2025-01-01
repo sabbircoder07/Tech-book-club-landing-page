@@ -1,7 +1,7 @@
 .section-average {
   display: flex;
   gap: 4rem;
-  margin-bottom: 8rem;
+  margin-bottom: 10rem;
   @media only screen and (max-width: $bp-medium-tab) {
     flex-direction: column;
     margin-bottom: 4rem;
@@ -29,7 +29,7 @@
   &__logos-tech {
     position: absolute;
     bottom: 0;
-    left: -7rem;
+    left: -6rem;
     cursor: pointer;
     @media only screen and (max-width: $bp-medium-tab) {
       bottom: 20%;
@@ -53,34 +53,18 @@
     }
   }
   &__heading {
-    position: relative;
+    z-index: -1;
   }
-  &__circle {
-    position: absolute;
-    bottom: 0;
-    right: 54%;
-    width: 12rem;
-    height: auto;
-    @media only screen and (max-width: $bp-medium-tab) {
-      right: 17%;
-    }
-    @media only screen and (max-width: $bp-small) {
-      bottom: -15%;
-      right: 8%;
-    }
-    @media only screen and (max-width: $bp-smaller) {
-      bottom: -18%;
-      right: 75%;
-    }
-    @media only screen and (max-width: $bp-smallest) {
-      bottom: -13%;
-      right: 42%;
-    }
-  }
+
   &__description {
     padding-right: 8rem;
     @media only screen and (max-width: $bp-medium-tab) {
       padding-right: 0rem;
     }
+  }
+  &__club {
+    background-image: url(../assets/images/pattern-circle.png);
+    padding: 0.6rem;
+    background-size: cover;
   }
 }

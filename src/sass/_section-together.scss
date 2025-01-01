@@ -1,5 +1,5 @@
 .section-together {
-  margin: 8rem 0;
+  margin: 10rem 0;
   display: flex;
   gap: 8rem;
   @media only screen and (max-width: $bp-medium-tab) {
@@ -8,12 +8,12 @@
     margin: 4rem 0 !important;
   }
   @media only screen and (max-width: $bp-small) {
-    gap: 2rem !important;
+    gap: 2.2rem !important;
   }
   &__img {
     background-image: url(../assets/images/image-read-together-desktop.webp);
     background-size: cover;
-    width: 44%;
+    width: 45%;
     height: auto;
     border-radius: 5px;
     @media only screen and (max-width: $bp-medium-tab) {

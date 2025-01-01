@@ -3,11 +3,11 @@
   flex-direction: column;
   gap: 2rem;
   width: 100%;
-  padding: 5rem 15rem 2rem 15rem !important;
+  padding: 8rem 15rem 2rem 15rem !important;
   background-image: url(../assets/images/pattern-dark-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #062630;
+  background-color: #062630e3;
   @media only screen and (max-width: $bp-medium-tab) {
     padding: 5rem 4rem 2rem 4rem !important;
   }
@@ -61,7 +61,7 @@
   }
   &__stat {
     color: #fff;
-    margin-top: -1rem;
+    margin-top: -1.2rem;
   }
   &__stat-image {
     width: 14rem;

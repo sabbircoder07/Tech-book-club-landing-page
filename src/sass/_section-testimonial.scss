@@ -1,8 +1,8 @@
 .section-testimonial {
-  margin-bottom: 8rem !important;
+  margin-bottom: 10rem !important;
   padding: 0rem 10rem !important;
   @media only screen and (max-width: $bp-medium-tab) {
-    margin-bottom: 4rem !important;
+    margin-bottom: 5rem !important;
     padding: 0rem !important;
   }
   &__content {
@@ -11,17 +11,18 @@
     align-items: center;
     gap: 2rem !important;
     @media only screen and (max-width: $bp-medium-tab) {
-      gap: 1rem !important;
+      gap: 1.5rem !important;
     }
   }
   &__heading {
     text-align: center;
   }
   &__author {
-    font-size: 2rem;
+    font-size: 1.8rem !important;
     font-weight: 600;
+    opacity: 0.8 !important;
     @media only screen and (max-width: $bp-small) {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
   }
 }
